@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUSTOS +</title>
+    <link href="/Users/yakisoba/repos/gustos/static/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+    <div class="layout-container">
+        <header class="layout-item header">
+            <div class="logo">GUSTOS</div>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" id="change-theme-btn"></span>
+            </label>
+
+            <!-- <button id="change-theme-btn">THEME</button> -->
+
+            <div class="dropdown" id="dropDown">
+                <!-- <a class="logo">GUSTOS</a> -->
+                <a href="javascript:void(0);" class="icon" id="nav-icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="/Users/yakisoba/repos/gustos/static/html/menu.html" class="link" target="_blank">Menu</a>
+                <!-- <a class="link">Menu</a> -->
+                <!-- <a class="link">Gallery</a> -->
+                <a href="#contact" class="link">Contact</a>
+                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i> -->
+            </div>
+        </header>
+
+        <!-- <div class="layout-item sidebar">Sidebar Left</div> -->
+
+        <section class="van">
+            <div class="img-container">
+                <img src="/Users/yakisoba/repos/gustos/static/img/burger van.png">
+            </div>
+
+            <div class="qr-container" id="menu">
+                <img class="qr-code" src="/Users/yakisoba/repos/gustos/static/img/frame_2.svg">
+            </div>
+        </section>
+
+        <!-- <div class="layout-item sidebar-right">Sidebar Right</div> -->
+
+        <footer class="layout-item footer" id="contact">
+            <div class="contact">(817) - 771 - 7467</div>
+            <div>
+                <a href="https://www.instagram.com/___gustos/" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT FOR NAV ICON -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("dropDown");
+            if (x.className === "dropdown") {
+                x.className += " responsive";
+            } else {
+                x.className = "dropdown";
+            }
+        } 
+    </script>
+
+    <script>
+        document.getElementById('change-theme-btn').onclick = function () {
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+
+</html>
