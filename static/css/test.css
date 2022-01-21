@@ -1,0 +1,48 @@
+/************
+
+    COMMON
+
+************/
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #a63c3c; */
+    /* background-color: white; */
+}
+
+.container {
+    background-color: blue;
+    display: grid;
+    grid-template-areas: 
+    "box1 box2";
+    justify-content: space-between;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: blueviolet;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: cadetblue;
+    z-index: 3;
+    /* height: 400px; */
+    position: absolute;
+    left: 95%;
+}

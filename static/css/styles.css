@@ -1,5 +1,7 @@
 /************
+
     COMMON
+
 ************/
 
 * {
@@ -18,6 +20,7 @@ html {
 body {
     margin: auto;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     /* color: #a63c3c;
     background-color: white; */
 }
@@ -41,11 +44,6 @@ body {
     color: #a63c3c !important;
 }
 
-/* .dropdown a:hover:not(#nav-icon:first-child) {
-    background-color: #a63c3c;
-    color: white;
-} */
-
 #body.dark-theme .header {
     border-bottom: white 2px solid;
 }
@@ -59,7 +57,9 @@ body {
 }
 
 /*****************
+
     LAYOUT GRID
+
 *****************/
 
 .layout-container {
@@ -68,7 +68,6 @@ body {
         "header header"
         "van van"
         "footer footer";
-    /* grid-gap: 5px; */
     height: calc(100vh - 2px);
 }
 
@@ -82,14 +81,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color: #a63c3c; */
     margin: 0 2%;
     border-bottom: #a63c3c 2px solid;
-}
-
-.sidebar {
-    grid-area: sidebar;
-    height: 90vh;
 }
 
 .van {
@@ -105,7 +98,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color: #a63c3c; */
     font-size: 2vw;
     margin: 0 2%;
     border-top: #a63c3c 2px solid;
@@ -116,13 +108,16 @@ footer div {
 }
 
 /*****************
+
       HEADER
+
 *****************/
 
 /* logo */
 
 .logo {
     font-size: 2vw;
+    padding-left: 16px;
 }
 
 /* toggle switch */
@@ -192,6 +187,8 @@ input:checked+.slider:before {
 
 .dropdown {
     overflow: hidden;
+    /* position: absolute; */
+    /* z-index: 999999; */
 }
 
 .dropdown .icon {
@@ -206,7 +203,6 @@ input:checked+.slider:before {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    /* font-size: 17px; */
     font-size: 2vw;
     border-radius: 25px;
 }
@@ -216,14 +212,75 @@ input:checked+.slider:before {
     color: white;
 }
 
+/*****************
+
+     VAN / QR
+
+*****************/
+
+.img-container {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    margin-top: 10%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.qr-container {
+    background-color: #a63c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 10% 0;
+    border-radius: 10px;
+}
+
+.qr-code {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*****************
+
+      FOOTER
+
+*****************/
+
+footer div a:visited {
+    color: #a63c3c;
+}
+
+.by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****************
+
+   @MEDIA SCREEN
+      
+******************/
+
 @media screen and (max-width: 600px) {
     .logo {
         font-size: 4vw;
+        padding-left: 0;
     }
 
     .switch {
         margin-left: 0;
-        /* margin-right: 40px; */
     }
 
     .img-container img {
@@ -248,9 +305,12 @@ input:checked+.slider:before {
     .dropdown a.icon {
         display: block;
     }
+    
+    .dropdown .icon {
+        padding-right: 2%;
+    }
 
     .img-container {
-        /* display: none; */
         height: 35vh !important;
         margin-top: 0 !important;
     }
@@ -260,8 +320,6 @@ input:checked+.slider:before {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: 200px;
-        height: 200px; */
         max-width: 200px;
         max-height: 200px;
         margin: 10% 0 15% 0 !important;
@@ -269,8 +327,6 @@ input:checked+.slider:before {
     }
 
     .qr-code {
-        /* width: 150px;
-        height: 150px; */
         max-width: 150px;
         max-height: 150px;
         text-align: center;
@@ -283,12 +339,6 @@ input:checked+.slider:before {
         position: relative;
     }
 
-    /* .dropdown.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    } */
-
     .dropdown.responsive .icon {
         float: right;
     }
@@ -300,65 +350,8 @@ input:checked+.slider:before {
     }
 }
 
-/*****************
-     VAN / QR
-*****************/
-
-.img-container {
-    display: flex;
-    align-items: center;
-    height: 50vh;
-    margin-top: 10%;
-    border-radius: 25px;
-    padding: 10px;
-}
-
-.img-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 25px;
-}
-
-.qr-container {
-    background-color: #a63c3c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* min-width: 400px;
-    min-height: 400px; */
-    /* max-width: 400px;
-    max-height: 400px; */
-    width: 400px;
-    height: 400px;
-    margin: 10% 0;
-    border-radius: 10px;
-}
-
-.qr-code {
-    /* max-width: 300px;
-    max-height: 300px; */
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-/*****************
-      FOOTER
-*****************/
-
 @media screen and (max-width: 600px) {
     .contact {
         font-size: 3vw;
     }
-}
-
-footer div a:visited {
-    color: #a63c3c;
-}
-
-.by {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

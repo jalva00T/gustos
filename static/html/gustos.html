@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUSTOS REAL SITE</title>
+    <link rel="stylesheet" href="/Users/yakisoba/repos/gustos/static/css/gustos.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <div class="layout-container">
+
+        <header class="layout-item header">
+            <a class="logo" href="">
+                Gustos
+                <!-- <img src="/Users/yakisoba/repos/gustos/static/img/Gustos_thick_main.png"> -->
+            </a>
+
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="/Users/yakisoba/repos/gustos/static/html/menu.html">Menu</a></li>
+                <!-- <li><a href="#catering">Catering</a></li> -->
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="switch"><label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round" id="change-theme-btn"></span>
+                    </label></li>
+            </ul>
+        </header>
+
+        <section class="rentals_section">
+            <div class="rentals_container">
+                <div class="rent_van">
+                    <h1>RENT THE BURGER VAN</h1>
+                    <p>Great for parties 25-50</p>
+                    <div>
+                        <a href="#contact">Rent It!</a>
+                    </div>
+                </div>
+                <!-- <div class="rent_truck">
+                    <h1>RENT THE BURGER TRUCK</h1>
+                    <p>Great for parties 50-100</p>
+                    <div>
+                        <a href="#contact">Rent It!</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="van">
+            <div class="img-container">
+                <a href="/Users/yakisoba/repos/gustos/static/html/menu.html">
+                    <img src="/Users/yakisoba/repos/gustos/static/img/burger_van.png">
+                </a>
+            </div>
+        </section>
+
+        <section id="locations"class="locations_section">
+            <!-- <div class="location_header">
+                <h1>LOCATION</h1>
+            </div> -->
+            <div class="locations">
+                <!-- <h1>LOCATIONS</h1> -->
+                <!-- <div class="jazz_cafe">
+                    <h3>Jazz Cafe</h3>
+                    <p>Mon-Sat 11am-9pm</p>
+                    <p>2504 Montgomery St, 76107</p>
+                    <div class="bulk_btn">
+                        <a href="#contact">Make A Bulk Order?</a>
+                    </div>
+                </div> -->
+                <div class="dryce">
+                    <h1>LOCATIONS</h1>
+                    <h3>Hotel Dryce</h3>
+                    <p>Thur-Sat 5pm-10pm</p>
+                    <p>3621 Byers Ave, 76107</p>
+                    <div class="bulk_btn">
+                        <a href="#contact">Make A Bulk Order?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact_section">
+            <div class="contact">
+                <h1>CONTACT</h1>
+                <form class="form_container" id="contact_form" action="https://formspree.io/f/mzbodkrr" method="POST">
+                    <input type="text" id="lastName" name="name" placeholder="Name">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <textarea id="message" name="message" placeholder="message..." rows="15" cols="45"></textarea>
+                </form>
+                <button type="submit" form="contact_form" class="send_btn">Send It!</button>
+                <div id="status"></div>
+                <!-- <div class="form_btn">
+                    <a href="javascript:$('#contact_form').submit();" >Send It!</a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- <footer>
+
+        </footer> -->
+
+        <!-- <footer class="layout-item footer" id="contact">
+            <div class="contact">(817) - 771 - 7467</div>
+            <div>
+                <a href="https://www.instagram.com/___gustos/" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </footer> -->
+
+    </div>
+
+    <!-- JAVASCRIPT FOR THEME CHANGE -->
+    <script>
+        document.getElementById('change-theme-btn').onclick = function () {
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            // get the form elements defined in your form HTML above
+
+            var form = document.getElementById("contact_form");
+            // var button = document.getElementById("my-form-button");
+            var status = document.getElementById("status");
+
+            // Success and Error functions for after the form is submitted
+
+            function success() {
+                form.reset();
+                status.classList.add('success');
+                status.innerHTML = "Success!";
+            }
+
+            function error() {
+                status.classList.add("error");
+                status.innerHTML = "Oops! There was a problem.";
+            }
+
+            // handle the form submission event
+
+            form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
+        });
+
+        // helper function for sending an AJAX request
+
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                    success(xhr.response, xhr.responseType);
+                } else {
+                    error(xhr.status, xhr.response, xhr.responseType);
+                }
+            };
+            xhr.send(data);
+        }
+
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

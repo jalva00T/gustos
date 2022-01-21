@@ -36,11 +36,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 95vh;
-    border-left: 2px solid #a63c3c;
-    border-right: 2px solid #a63c3c;
+    /* border-left: 2px solid #a63c3c;
+    border-right: 2px solid #a63c3c; */
     padding: 0 1%;
-    /* border: 2px solid #a63c3c;
-    border-radius: 25px; */
+    border: 2px solid #a63c3c;
+    border-radius: 25px;
 }
 
 .background-image img {
@@ -82,6 +82,7 @@ body {
     }
 
     .box {
+        /* background-color: #a63c3c; */
         height: 15px;
         width: 40px;
     }
