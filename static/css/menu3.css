@@ -1,0 +1,374 @@
+/************
+    COMMON
+************/
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    /* padding: 0; */
+    padding: 0 2% 0 2%;
+    /* color: #a63c3c; */
+    background-color: #F1E9E2;
+    color: #C5242A;
+    font-family: Helvetica, sans-serif;
+    /* height: 100vh; */
+}
+
+h1 {
+    margin: 0;
+    /* font-size: 1em; */
+}
+
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: dyslexic;
+    src: url(/Users/yakisoba/repos/gustos/static/fonts/dyslexic_font.otf);
+}
+
+/************
+    HEADER
+************/
+
+.container {
+    /* padding: 0 3%; */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2% 0 2% 0;
+}
+
+.left {
+    display: flex;
+    align-items: end;
+    margin: 0 9% 0 9%;
+}
+
+.dots {
+    width: 60px;
+    height: 60px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle .logo {
+    max-width: 625px;
+    max-height: 175px;
+    /* margin: 30px 0 30px 0; */
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    margin: 0 9% 0 9%;
+}
+
+.right-group {
+    float: right;
+    text-align: center;
+}
+
+.right .right-group img {
+    margin: 0 0 40px 0;
+}
+
+.right .right-group p {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+}
+
+hr {
+    width: 95%;
+    background-color: #C5242A;
+    height: 2px;
+    border: none;
+}
+
+/************
+    MENU
+************/
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 15px;
+}
+
+.snack-and-share {
+    border: #C5242A 2px solid;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 2% 5% 0 5%;
+}
+
+.menu-item-card {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 0 2% 0 2%;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specials {
+    font-weight: bold;
+    margin: 2% 0 2% 0;
+    font-size: .75em;
+}
+
+.burgers {
+    border: #C5242A 2px solid;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 2% 5% 0 5%;
+}
+
+.outlined-card {
+    border: #C5242A 2px solid;
+    padding: 2%;
+}
+
+.gusto-addons {
+    display: flex;
+    text-align: center;
+}
+
+.gusto-addons p{
+    margin: 2% 10% 0 0;
+}
+
+/************
+    FOOTER
+************/
+
+footer {
+    margin: 0 2% 2% 2%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #C5242A;
+    border: #C5242A 2px solid;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer h1 {
+    /* background-color: #C5242A; */
+    color: white;
+    font-size: 2em;
+    font-family: dyslexic;
+    padding:1% 0 1% 0;
+    /* text-align: center; */
+}
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: white 2px solid;
+    width: 55%;
+    margin: 0 0 1% 0;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-around;
+    background-color: #C5242A;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-pic {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0 5%;
+}
+
+footer img {
+    background-color: none;
+    max-width: 100%;
+    height: auto;
+    padding: 4%;
+}
+
+/*******************
+    @MEDIA IPHONES
+********************/
+
+@media screen and (max-width: 750px) {
+
+    h1 {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .left {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin: 0 9% 0 9%;
+    }
+    
+    .dots {
+        width: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .middle .logo {
+        width: 100%;
+        max-width: 700px;
+        /* max-width: 100%; */
+        height: auto;
+        /* margin: 30px 0 30px 0; */
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        margin: 0 9% 0 9%;
+    }
+
+    .right .right-group p {
+        font-size: small;
+    }
+
+    .right .right-group img {
+        width: 30px;
+        margin: 0 0 2% 0;
+    }
+
+    footer {
+        margin: 0 2% 2% 2%;
+        /* padding-bottom: 5%; */
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: #C5242A;
+        border: #C5242A 2px solid;
+    }
+
+    footer h1 {
+        /* background-color: #C5242A; */
+        color: white;
+        font-size: 1em;
+        font-family: dyslexic;
+        padding:1% 0 1% 0;
+        /* text-align: center; */
+    }
+
+    footer p {
+        margin: 0 2%;
+    }
+
+    .footer-info p {
+        font-size: .75em;
+    }
+}
+
+/*******************
+    @MEDIA IPADS
+********************/
+
+@media screen and (min-width: 750px ) and (max-width: 920px) {
+
+    /* .middle .logo {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    } */
+
+    .left {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin: 0 9% 0 9%;
+    }
+
+    .dots {
+        width: 50px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .middle .logo {
+        max-width: 525px;
+        max-height: 175px;
+        /* margin: 30px 0 30px 0; */
+    }
+
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        margin: 0 9% 0 9%;
+    }
+}

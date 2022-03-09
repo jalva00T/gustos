@@ -17,21 +17,21 @@
 
         <header class="layout-item header">
             <a class="logo" href="">
-                Gustos
-                <!-- <img src="/Users/yakisoba/repos/gustos/static/img/Gustos_thick_main.png"> -->
+                <!-- Gustos -->
+                <img src="/Users/yakisoba/repos/gustos/static/img/8A7C7F36B1465E3.png">
             </a>
 
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                <li><a href="/Users/yakisoba/repos/gustos/static/html/menu.html">Menu</a></li>
+                <li><a href="/Users/yakisoba/repos/gustos/static/html/menu3.html">Menu</a></li>
                 <!-- <li><a href="#catering">Catering</a></li> -->
                 <li><a href="#locations">Locations</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li id="switch"><label class="switch">
+                <!-- <li id="switch"><label class="switch">
                         <input type="checkbox">
                         <span class="slider round" id="change-theme-btn"></span>
-                    </label></li>
+                    </label></li> -->
             </ul>
         </header>
 
@@ -56,13 +56,13 @@
 
         <section class="van">
             <div class="img-container">
-                <a href="/Users/yakisoba/repos/gustos/static/html/menu.html">
-                    <img src="/Users/yakisoba/repos/gustos/static/img/burger_van.png">
+                <a href="/Users/yakisoba/repos/gustos/static/html/menu3.html">
+                    <img src="/Users/yakisoba/repos/gustos/static/img/1B501E88E3900178.png">
                 </a>
             </div>
         </section>
 
-        <section id="locations"class="locations_section">
+        <section id="locations" class="locations_section">
             <!-- <div class="location_header">
                 <h1>LOCATION</h1>
             </div> -->
@@ -78,8 +78,9 @@
                 </div> -->
                 <div class="dryce">
                     <h1>LOCATIONS</h1>
-                    <h3>Hotel Dryce</h3>
+                    <p>Hotel Dryce</p>
                     <p>Thur-Sat 5pm-10pm</p>
+                    <!-- <p>fuuuuck</p> -->
                     <p>3621 Byers Ave, 76107</p>
                     <div class="bulk_btn">
                         <a href="#contact">Make A Bulk Order?</a>
@@ -92,7 +93,7 @@
             <div class="contact">
                 <h1>CONTACT</h1>
                 <form class="form_container" id="contact_form" action="https://formspree.io/f/mzbodkrr" method="POST">
-                    <input type="text" id="lastName" name="name" placeholder="Name">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
                     <input type="email" id="email" name="email" placeholder="Email">
                     <textarea id="message" name="message" placeholder="message..." rows="15" cols="45"></textarea>
                 </form>
@@ -179,6 +180,15 @@
             }
         }
 
+    </script>
+
+    <script>
+        document.addEventListener('invalid', (function () {
+            return function (e) {
+                e.preventDefault();
+                document.getElementById("name").focus();
+            };
+        })(), true);
     </script>
 
 </body>
