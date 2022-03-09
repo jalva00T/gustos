@@ -40,12 +40,10 @@ p {
 }
 
 @font-face {
-    font-family: 'dyslexic_-_blackregular';
-    src: url('dyslexic_font-webfont.woff2') format('woff2'),
-        url('dyslexic_font-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    /* src: url(dyslexic_font.otf); */
+    font-family: dyslexic;
+    /* src: url('dyslexic_font-webfont.woff2') format('woff2'),
+         url('dyslexic_font-webfont.woff') format('woff'); */
+    src: url(dyslexic_font.otf);
 }
 
 /************
@@ -171,7 +169,7 @@ hr {
     text-align: center;
 }
 
-.gusto-addons p {
+.gusto-addons p{
     margin: 2% 10% 0 0;
 }
 
@@ -187,7 +185,7 @@ footer {
     border: #C5242A 2px solid;
 }
 
-.info-container {
+.info-container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -197,8 +195,8 @@ footer h1 {
     /* background-color: #C5242A; */
     color: white;
     font-size: 2em;
-    font-family: 'dyslexic_-_blackregular';
-    padding: 1% 0 1% 0;
+    font-family: dyslexic;
+    padding:1% 0 1% 0;
     /* text-align: center; */
 }
 
@@ -262,7 +260,7 @@ footer img {
         justify-content: center;
         margin: 0 9% 0 9%;
     }
-
+    
     .dots {
         width: 30px;
         max-width: 100%;
@@ -314,7 +312,7 @@ footer img {
         color: white;
         font-size: 1em;
         font-family: dyslexic;
-        padding: 1% 0 1% 0;
+        padding:1% 0 1% 0;
         /* text-align: center; */
     }
 
@@ -331,7 +329,7 @@ footer img {
     @MEDIA IPADS
 ********************/
 
-@media screen and (min-width: 750px) and (max-width: 920px) {
+@media screen and (min-width: 750px ) and (max-width: 920px) {
 
     /* .middle .logo {
         width: 100%;
