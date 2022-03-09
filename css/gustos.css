@@ -47,10 +47,10 @@ button:hover {
 }
 
 @font-face {
-    font-family: "dyslexic";
+    font-family: dyslexic;
     /* src: url('css/fonts/dyslexic_font-webfont.woff2') format('woff2'),
         url('css/fonts/dyslexic_font-webfont.woff') format('woff'); */
-    src: url(css/fonts/dyslexic_font.otf);
+    src: url(/Users/yakisoba/repos/gustos/css/fonts/dyslexic_font.otf);
 }
 
 /************
