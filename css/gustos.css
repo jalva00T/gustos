@@ -375,12 +375,14 @@ input:checked+.slider:before {
 }
 
 .locations a {
+    display: flex;
     text-decoration: none;
     color: #C5242A;
     border: #C5242A 2px solid;
     border-radius: 25px;
     padding: 10px;
     font-family: dyslexic;
+    text-align: center;
 }
 
 .locations a:hover {
