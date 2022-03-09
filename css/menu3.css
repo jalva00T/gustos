@@ -41,16 +41,12 @@ p {
 
 @font-face {
     font-family: dyslexic;
-    src: url(/Users/yakisoba/repos/gustos/static/fonts/dyslexic_font.otf);
+    src: url(/Users/yakisoba/repos/gustos/fonts/dyslexic_font.otf);
 }
 
 /************
     HEADER
 ************/
-
-.container {
-    /* padding: 0 3%; */
-}
 
 .header {
     display: grid;
