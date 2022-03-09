@@ -48,9 +48,9 @@ button:hover {
 
 @font-face {
     font-family: "dyslexic";
-    src: url('dyslexic_font-webfont.woff2') format('woff2'),
-        url('dyslexic_font-webfont.woff') format('woff');
-    /* src: url(gustos/dyslexic_font.otf); */
+    src: url('css/fonts/dyslexic_font-webfont.woff2') format('woff2'),
+        url('css/fonts/dyslexic_font-webfont.woff') format('woff');
+    /* src: url(css/fonts/dyslexic_font.otf); */
 }
 
 /************
