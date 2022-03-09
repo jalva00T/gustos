@@ -50,8 +50,6 @@ button:hover {
     font-family: "dyslexic";
     src: url('dyslexic_font-webfont.woff2') format('woff2'),
         url('dyslexic_font-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
     /* src: url(gustos/dyslexic_font.otf); */
 }
 
