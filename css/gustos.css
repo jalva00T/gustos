@@ -468,6 +468,7 @@ textarea:focus {
     font-size: 16px;
     cursor: pointer;
     font-family: dyslexic;
+    color: #C5242A;
 }
 
 .form_btn {
