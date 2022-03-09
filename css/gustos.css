@@ -295,7 +295,7 @@ input:checked+.slider:before {
     border: #C5242A 2px solid;
     border-radius: 25px;
     padding: 10px;
-    font-family: 'dyslexic_-_blackregular';
+    font-family: dyslexic;
 }
 
 .rentals_container a:hover {
@@ -380,7 +380,7 @@ input:checked+.slider:before {
     border: #C5242A 2px solid;
     border-radius: 25px;
     padding: 10px;
-    font-family: 'dyslexic_-_blackregular';
+    font-family: dyslexic;
 }
 
 .locations a:hover {
@@ -467,7 +467,7 @@ textarea:focus {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    font-family: 'dyslexic_-_blackregular';
+    font-family: dyslexic;
 }
 
 .form_btn {
