@@ -490,6 +490,7 @@ textarea:focus {
 #status.success {
     animation: status 4s ease forwards;
     border: #C5242A 2px solid;
+    font-family: dyslexic;
 }
 
 #status.error {
