@@ -75,6 +75,12 @@ p {
     align-items: center;
 }
 
+.middle a {
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+}
+
 .middle .logo {
     max-width: 625px;
     max-height: 175px;
