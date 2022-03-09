@@ -50,7 +50,7 @@ button:hover {
     font-family: dyslexic;
     /* src: url('css/fonts/dyslexic_font-webfont.woff2') format('woff2'),
         url('css/fonts/dyslexic_font-webfont.woff') format('woff'); */
-    src: url(gustos/css/fonts/dyslexic_font.otf);
+    src: url(/Users/yakisoba/repos/gustos/fonts/dyslexic_font.otf);
 }
 
 /************
