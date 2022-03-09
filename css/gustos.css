@@ -31,7 +31,7 @@ body {
 h1 {
     margin: 0;
     /* font-size: 32px !important; */
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
 }
 
 button {
@@ -47,7 +47,7 @@ button:hover {
 }
 
 @font-face {
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
     src: url('dyslexic_font-webfont.woff2') format('woff2'),
         url('dyslexic_font-webfont.woff') format('woff');
     font-weight: normal;
@@ -297,7 +297,7 @@ input:checked+.slider:before {
     border: #C5242A 2px solid;
     border-radius: 25px;
     padding: 10px;
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
 }
 
 .rentals_container a:hover {
@@ -382,7 +382,7 @@ input:checked+.slider:before {
     border: #C5242A 2px solid;
     border-radius: 25px;
     padding: 10px;
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
 }
 
 .locations a:hover {
@@ -469,7 +469,7 @@ textarea:focus {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
 }
 
 .form_btn {

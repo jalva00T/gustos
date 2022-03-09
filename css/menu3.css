@@ -40,7 +40,7 @@ p {
 }
 
 @font-face {
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
     src: url('dyslexic_font-webfont.woff2') format('woff2'),
         url('dyslexic_font-webfont.woff') format('woff');
     font-weight: normal;
@@ -197,7 +197,7 @@ footer h1 {
     /* background-color: #C5242A; */
     color: white;
     font-size: 2em;
-    font-family: dyslexic;
+    font-family: 'dyslexic_-_blackregular';
     padding: 1% 0 1% 0;
     /* text-align: center; */
 }
