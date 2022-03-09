@@ -31,7 +31,7 @@ body {
 h1 {
     margin: 0;
     /* font-size: 32px !important; */
-    font-family: 'dyslexic';
+    font-family: dyslexic;
 }
 
 button {
@@ -50,7 +50,7 @@ button:hover {
     font-family: "dyslexic";
     src: url('css/fonts/dyslexic_font-webfont.woff2') format('woff2'),
         url('css/fonts/dyslexic_font-webfont.woff') format('woff');
-    /* src: url(css/fonts/dyslexic_font.otf); */
+    src: url(css/fonts/dyslexic_font.otf);
 }
 
 /************
