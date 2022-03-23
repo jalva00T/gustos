@@ -56,10 +56,10 @@ body {
     /* background-color: tomato; */
     z-index: 2;
     position: absolute;
-    top: 91.5%;
-    left: 49.5%;
-    height: 15px;
-    width: 55px;
+    top: 90%;
+    left: 36.5%;
+    height: 20px;
+    width: 115px;
 }
 
 @media screen and (max-width: 480px) {
