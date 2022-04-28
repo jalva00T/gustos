@@ -173,6 +173,10 @@ input:checked+.slider:before {
     top: 20px;
 }
 
+.social-btn {
+    display: none;
+}
+
 .header .menu-btn:checked~.menu {
     max-height: 340px;
 }
@@ -254,6 +258,17 @@ input:checked+.slider:before {
     /* border-right: 1px solid #a63c3c; */
 }
 
+.insta-menu {
+    max-height: 0;
+    max-width: 0;
+    transition: max-height .2s ease-out;
+    transition: max-width .2s ease-out;
+}
+
+.social-btn:checked ~ .insta-menu {
+    max-height: 240px;
+}
+
 .header ul li a:hover {
     background-color: #C5242A;
     color: #F1E9E2;
@@ -294,6 +309,7 @@ input:checked+.slider:before {
     color: #C5242A;
     border: #C5242A 2px solid;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
     padding: 10px;
     font-family: dyslexic;
 }
@@ -316,7 +332,8 @@ input:checked+.slider:before {
     /* height: 50vh; */
     /* margin-top: 10%; */
     border-radius: 25px;
-    padding: 10px 10px 8px 10px;
+    /* padding: 10px 10px 8px 10px; */
+    padding: 50px 10px 8px 10px;
     background-color: #F1E9E2;
     margin: 0 15px;
 }
@@ -380,6 +397,7 @@ input:checked+.slider:before {
     color: #C5242A;
     border: #C5242A 2px solid;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
     padding: 10px;
     font-family: dyslexic;
     text-align: center;
@@ -470,6 +488,7 @@ textarea:focus {
     font-size: 16px;
     cursor: pointer;
     font-family: dyslexic;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
     /* color: #C5242A !important */
 }
 
@@ -480,6 +499,7 @@ textarea:focus {
 
 #status {
     border-radius: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px; */
     padding: 10px;
     margin-bottom: 30px;
     cursor: pointer;
@@ -494,11 +514,13 @@ textarea:focus {
     animation: status 4s ease forwards;
     border: #C5242A 2px solid;
     font-family: dyslexic;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
 }
 
 #status.error {
     animation: status 4s ease forwards;
     border: #C5242A 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
 }
 
 @keyframes status {
@@ -562,6 +584,14 @@ textarea:focus {
         float: left;
     }
 
+    /* INSTAGRAM DROPDOWN RND1 */
+
+    .insta-menu li {
+        /* float: none; */
+        /* display: none; */
+        /* position: absolute; */
+    }
+
     .header ul li a {
         padding: 20px 30px;
         outline: none;
@@ -569,7 +599,37 @@ textarea:focus {
         font-size: 1.5em;
         border-top: none;
         color: #C5242A;
+    }
 
+    /* INSTAGRAM DROPDOWN RND2 */
+
+    .social-btn {
+        display: none;
+    }
+
+    .social-icon {
+        /* position: relative; */
+        cursor: pointer;
+    }
+
+    .social-btn:checked ~ .insta-menu {
+        /* max-height: 240px; */
+        /* max-width: 200px; */
+        /* max-height: max-content; */
+        /* max-width: max-content; */
+    }
+
+    .insta-menu {
+        /* max-height: 0; */
+        /* max-width: 0; */
+        /* transition: max-height .2s ease-out;
+        transition: max-width .2s ease-out; */
+    }
+
+    .insta-menu li {
+        /* float: none; */
+        /* display: block; */
+        /* position: absolute; */
     }
 
     /* original for desktop view */
@@ -635,6 +695,7 @@ textarea:focus {
         display: flex;
         justify-content: center;
         align-items: center;
+        clear: both;
     }
 
     .img-container {
