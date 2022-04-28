@@ -9,7 +9,8 @@
     <meta name="description" content="Gustos Site4" />
     <meta name="title" property="og:title" content="Gustos_4" />
     <meta property="og:type" content="Website" />
-    <meta name="image" property="og:image" content="https://res.cloudinary.com/dlr6ybcfd/image/upload/v1647111023/gustos_site_thumbnail_g2ajio.png" />
+    <meta name="image" property="og:image"
+        content="https://res.cloudinary.com/dlr6ybcfd/image/upload/v1647111023/gustos_site_thumbnail_g2ajio.png" />
     <meta name="description" property="og:description" content="Gustos Site4" />
     <meta name="author" content="Jake Alvarez" />
 
@@ -27,19 +28,55 @@
 
     <div class="layout-container">
 
-        <header class="layout-item header">
+        <header id="header" class="layout-item header">
             <a class="logo" href="">
                 <!-- Gustos -->
                 <img src="img/8A7C7F36B1465E3.png">
             </a>
 
             <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
             <ul class="menu">
                 <li><a href="menu4.html">Menu</a></li>
-                <!-- <li><a href="#catering">Catering</a></li> -->
                 <li><a href="#locations">Locations</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.instagram.com/___gustos/" target="_blank">
+                        <i class="fa fa-instagram fa-lg"></i>
+                    </a></li>
+
+                <!-- FOR INSTAGRAM DROPDOWN -->
+
+                <!-- RND1 -->
+                <!-- <li class="insta-dropdown"><a><i class="fa fa-instagram fa-lg"></i></a>
+                    <ul class="insta-menu">
+                        <li><a>Ft. Worth</a></li>
+                        <li><a>Tulsa</a></li>
+                    </ul>
+                </li> -->
+
+                <!-- RND2 -->
+                <!-- <input class="social-btn" type="checkbox" id="social-btn" />
+                <label class="social-icon" for="social-btn">
+                    <li>
+                        <a>
+                            <i class="fa fa-instagram fa-lg"></i>
+                        </a>
+                    </li>
+                </label>
+                <ul class="insta-menu">
+                    <li>
+                        <a>Ft. Worth</a>
+                    </li>
+                    <li>
+                        <a>Tulsa</a>
+                    </li>
+                </ul>
+                </li> -->
+
+                <!-- THEME CHANGE SLIDER -->
+
                 <!-- <li id="switch"><label class="switch">
                         <input type="checkbox">
                         <span class="slider round" id="change-theme-btn"></span>
@@ -47,7 +84,9 @@
             </ul>
         </header>
 
-        <section class="rentals_section">
+        <!-- RENTALS SECTION -->
+
+        <!-- <section class="rentals_section">
             <div class="rentals_container">
                 <div class="rent_van">
                     <h1>RENT THE BURGER VAN</h1>
@@ -56,15 +95,8 @@
                         <a href="#contact">Rent It!</a>
                     </div>
                 </div>
-                <!-- <div class="rent_truck">
-                    <h1>RENT THE BURGER TRUCK</h1>
-                    <p>Great for parties 50-100</p>
-                    <div>
-                        <a href="#contact">Rent It!</a>
-                    </div>
-                </div> -->
             </div>
-        </section>
+        </section> -->
 
         <section class="van">
             <div class="img-container">
@@ -118,19 +150,6 @@
             </div>
         </section>
 
-        <!-- <footer>
-
-        </footer> -->
-
-        <!-- <footer class="layout-item footer" id="contact">
-            <div class="contact">(817) - 771 - 7467</div>
-            <div>
-                <a href="https://www.instagram.com/___gustos/" target="_blank">
-                    <i class="fa fa-instagram fa-2x"></i>
-                </a>
-            </div>
-        </footer> -->
-
     </div>
 
     <!-- JAVASCRIPT FOR THEME CHANGE -->
@@ -140,6 +159,7 @@
         }
     </script>
 
+    <!-- JAVASCRIPT FOR FORM -->
     <script>
         window.addEventListener("DOMContentLoaded", function () {
             // get the form elements defined in your form HTML above
@@ -203,6 +223,15 @@
             };
         })(), true);
     </script>
+
+    <!-- JAVASCRIPT FOR CALENDLY -->
+    <link href="/Users/yakisoba/repos/gustos/css/calendly.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- <script type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/gustos?background_color=f1e9e2&text_color=c5242a&primary_color=c5242a', text: 'SCHEDULE BURGER VAN!', color: '#f1e9e2', textColor: '#c5242a', branding: false }); }
+    </script> -->
+    <script type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/gustos?background_color=f1e9e2&text_color=c5242a&primary_color=c5242a', text: 'SCHEDULE BURGER VAN!', branding: false }); }
+    </script>
+
 
 </body>
 
