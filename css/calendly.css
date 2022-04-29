@@ -164,9 +164,11 @@
 
 .calendly-badge-widget {
     position: fixed;
-    right: 20px;
-    bottom: 15px;
+    /* right: 20px; */
+    right: 2%;
+    bottom: 20px;
     z-index: 9998;
+    padding-right: 20px;
 }
 
 .calendly-badge-widget .calendly-badge-content {
